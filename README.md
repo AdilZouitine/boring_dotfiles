@@ -12,5 +12,5 @@
 curl -sL install-node.vercel.app/lts | bash
 
 - black
--
+- install Meslo nerd font
 ```
