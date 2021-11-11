@@ -1,0 +1,1 @@
+cat zsh/zshtoappend >> ~/.zsh 

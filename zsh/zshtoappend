@@ -1,0 +1,5 @@
+# Add brew on zsh
+# export PATH=/opt/homebrew/bin:$PATH
+
+# Alias neovim as vi
+alias vi="nvim"
