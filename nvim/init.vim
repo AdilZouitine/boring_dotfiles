@@ -4,6 +4,8 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 "Display line number as relative
 :set number 
 :set relativenumber
+:set nuw=4
+:set signcolumn=yes
 " Disable default status bar
 :set noshowmode
 "Set absolute number value in insert mod
@@ -12,7 +14,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 :  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
 :  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
 :augroup END
-" Display white space
+"" Display white space
 :set list
 " :set wildmenu
 " Persistent undo
@@ -87,12 +89,6 @@ set shortmess+=c
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
