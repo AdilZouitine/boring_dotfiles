@@ -3,3 +3,8 @@
 
 # Alias neovim as vi
 alias vi="nvim"
+
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting )
+
+# Change color for zsh autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'

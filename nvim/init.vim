@@ -30,9 +30,8 @@ set clipboard^=unnamed,unnamedplus
 " Enable parenthesis rainbow color
 let g:rainbow_active = 1
 
-" Set smart indent
+"" Set smart indent
 set smartindent
-
 " Settings for Python.
 autocmd FileType *.py
     \ set tabstop=4 " length of a tabulation
@@ -42,7 +41,8 @@ autocmd FileType *.py
     \ set expandtab " Insert spaces instead of tabs
     \ set autoindent
     \ set fileformat=unix
-
+autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2
+autocmd Filetype c setlocal expandtab tabstop=2 shiftwidth=2
 " Allow mouse use in vim
 set mouse=a
 
