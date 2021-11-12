@@ -7,6 +7,11 @@
 
 **You need before installing my config:**
 
+**NeoVim**:
+
+- `sudo apt install neovim` on Debian
+- `brew install neovim` on MacOs
+
 **Clang (llvm)**:
 
 - `sudo apt install llvm` on Debian
