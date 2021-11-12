@@ -3,7 +3,7 @@
 
 ## Nvim
 
-![My boring NeoVim](./image/my_boring_nvim 14.46.16.png)
+![My boring NeoVim](./image/my_boring_nvim.png)
 
 **You need before installing**
 
