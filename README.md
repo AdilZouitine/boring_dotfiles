@@ -5,22 +5,23 @@
 
 ![My boring NeoVim](./image/my_boring_nvim.png)
 
-**You need before installing**
+**You need before installing my config:**
 
-- `Clang (llvm)`
-`sudo apt install llvm`
-or
-`brew install llvm`
+**Clang (llvm)**:
 
-- `nodejs` >= 12.12
+- `sudo apt install llvm` on Debian
+- `brew install llvm` on MacOs
 
-	`curl -sL install-node.vercel.app/lts | sudo bash`
+**nodejs** >= 12.12 :
 
-	```
-- black
-	`pip install black`
+- `curl -sL install-node.vercel.app/lts | sudo bash`
+
+
+**black**:
+- `pip install black`
 	
-- install Meslo nerd font
+**Meslo nerd font**:
+
 ```
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
 unzip Meslo.zip -d ~/.fonts
@@ -29,16 +30,42 @@ unzip Meslo.zip -d ~/Library/Fonts
 fc-cache -fv
 ```
 
+**Install my Boring NeoVim**: 
+
+```
+chmod +x setup/install_editor.sh
+./setup/install_editor.sh
+```
+Update: 
+```
+chmod +x setup/update_editor.sh
+./setup/update_editor.sh
+```
+ET VOILÀ !!
+
+
 ## Oh-My-Zsh
 
-- Install `zsh`
-`sudo apt install zsh`
-or if you are on MacOs
-`brew install zsh`
 
-- Install `oh-my-zsh`
-`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+![My boring terminal](./image/my_boring_terminal.png)
 
-- Install `Powerline10k`
+**You need before installing my config:**
 
-`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+**Install** `zsh`:
+- `sudo apt install zsh` on Debian
+_ `brew install zsh` on MacOs
+
+**Install** `oh-my-zsh`:
+
+- `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+**Install** `Powerline10k`:
+
+- `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+
+**Install my Boring Zsh**:
+```
+chmod +x setup/setup_zsh.sh
+./setup/setup_zsh.sh
+```
+TADAAAAAA !!

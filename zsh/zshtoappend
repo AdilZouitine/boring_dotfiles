@@ -8,3 +8,5 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting )
 
 # Change color for zsh autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+# ZSH_THEME
+ZSH_THEME="powerlevel10k/powerlevel10k"
