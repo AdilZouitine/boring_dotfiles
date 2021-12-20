@@ -41,8 +41,10 @@ autocmd FileType *.py
     \ set expandtab " Insert spaces instead of tabs
     \ set autoindent
     \ set fileformat=unix
-autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2
-autocmd Filetype c setlocal expandtab tabstop=2 shiftwidth=2
+autocmd Filetype cpp setlocal expandtab softtabstop=4 tabstop=2 shiftwidth=4 cino=:0,l1,g0,(0,u0,W2s comments^=s2:/**,mb:*,ex:*/
+
+autocmd Filetype c setlocal expandtab softtabstop=4 tabstop=2 shiftwidth=4 cino=:0,l1,g0,(0,u0,W2s comments^=s2:/**,mb:*,ex:*/
+"autocmd Filetype c setlocal expandtab tabstop=2 shiftwidth=2
 " Allow mouse use in vim
 set mouse=a
 
@@ -66,6 +68,8 @@ let g:coc_global_extensions += ['coc-prettier']
 let g:coc_global_extensions += ['coc-pyright']
 let g:coc_global_extensions += ['coc-clangd']
 let g:coc_global_extensions += ['coc-explorer']
+let g:coc_global_extensions += ['coc-rls']
+let g:coc_global_extensions += ['coc-rust-analyzer']
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8

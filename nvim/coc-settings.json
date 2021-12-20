@@ -15,7 +15,9 @@
     "yaml",
     "json",
     "cpp",
-    "c"
+    "c",
+    "rust",
+    "rs"
   ],
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "black",
