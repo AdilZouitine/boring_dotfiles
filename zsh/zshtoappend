@@ -10,3 +10,8 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting )
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 # ZSH_THEME
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+alias l='exa'
+alias la='exa -a'
+alias ll='exa -lah'
+alias ls='exa --color=auto --icons'
