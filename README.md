@@ -17,6 +17,9 @@
 - `sudo apt install llvm` on Debian
 - `brew install llvm` on MacOs
 
+**rustup**: 
+- `rustup component add rls rust-analysis rust-src`
+
 **nodejs** >= 12.12 :
 
 - `curl -sL install-node.vercel.app/lts | sudo bash`
