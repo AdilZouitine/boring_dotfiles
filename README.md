@@ -68,6 +68,12 @@ _ `brew install zsh` on MacOs
 
 - `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 
+**Install** `exa`:
+
+- `sudo apt install exa` on Debian
+- `brew install exa` on MacOs
+- `cargo install exa` with Cargo 
+
 **Install my Boring Zsh**:
 ```
 chmod +x setup/setup_zsh.sh
