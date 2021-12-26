@@ -35,5 +35,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " LSP coc.vim
     " Use release branch (recommend)
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Use Documentation Generation
+    Plug 'kkoomen/vim-doge', {'do': { -> doge#install({ 'headless': 1 }) }}
+    
 call plug#end()
 

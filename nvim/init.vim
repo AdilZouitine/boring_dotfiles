@@ -54,6 +54,10 @@ set colorcolumn=80
 " Autoformat on save coc-prettier
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
+" Documentation generation
+let g:doge_doc_standard_python = 'google'
+let g:doge_enable_mappings=1
+
 "#######################
 "#      FUNCTIONS
 "#######################
